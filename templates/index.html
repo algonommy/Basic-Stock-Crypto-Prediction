@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Prediction APP</title>
+<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+  <style>
+div.a {
+        text-align: center;
+}
+</style>
+ <div class="a">
+ <p><h1><font color="#6699CC"> Stock Prediction </h1> </font></p>
+  <p><h3><font color="#6699CC"> Keep Scrollling Until The Chosen Stock is obsereved </h3></font></p>
+</body>
+
+<body>
+  <div style="height:200px;width:800px;overflow:scroll;overflow-x:scroll;overflow-y:scroll;">
+<!-- ;border:solid 2px blue -->
+ <!-- <div class="login"> -->
+
+  <!-- <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet"> -->
+
+  <!-- Custom styles for this template -->
+  <!-- <link href="{{ url_for('static', filename='narrow-jumbotron.css') }}" rel="stylesheet"> -->
+<!-- </head> -->
+
+<body>
+
+    <!-- <div class="jumbotron">
+      <p class="lead">Purchase The Product for only $199. Every 3 Months</p>
+      <form action="{{ url_for('pay') }}" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{ pub_key }}"
+          data-amount="19900"
+          data-name="Demo Site"
+          data-description="Widget"
+          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+          data-locale="auto">
+        </script>
+      </form>
+    </div> -->
+<!--
+    <footer class="footer">
+      <p>&copy; Store 2017</p>
+    </footer> -->
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict_bitcoin')}}"method="post">
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Bitcoin</button>
+        <!-- . Purchase The Basic Model for only $10 Each Use -->
+        <div class="jumbotron">
+          <!-- <form action="{{ url_for('pay') }}" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ"
+              data-amount="1000"
+              data-name="Demo Site"
+              data-description="Widget"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto">
+            </script> -->
+          <!-- </form> -->
+        </div>
+      </form>
+      <br>
+   <form action="{{ url_for('predict_ethereum')}}"method="post">
+       <button type="submit" class="btn btn-primary btn-block btn-large">Predict Etherum</button>
+       <!-- . Purchase The Basic Model for only $10 Each Use -->
+       <div class="jumbotron">
+         <!-- <form action="{{ url_for('pay') }}" method="POST">
+           <script
+             src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+             data-key="pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ"
+             data-amount="1000"
+             data-name="Demo Site"
+             data-description="Widget"
+             data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+             data-locale="auto">
+           </script>
+         </form> -->
+       </div>
+   </form>
+  <br>
+  <form action="{{ url_for('predict_APPLE')}}"method="post">
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict Apple</button>
+      <!-- . Purchase The Basic Model for only $10 Each Use -->
+      <div class="jumbotron">
+        <!-- <form action="{{ url_for('pay') }}" method="POST">
+          <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ"
+            data-amount="1000"
+            data-name="Demo Site"
+            data-description="Widget"
+            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto">
+          </script>
+        </form> -->
+      </div>
+  </form>
+ <br>
+ <form action="{{ url_for('predict_MSFT')}}"method="post">
+     <button type="submit" class="btn btn-primary btn-block btn-large">Predict Microsoft</button>
+     <!-- . Purchase The Basic Model for only $10 Each Use -->
+     <div class="jumbotron">
+       <!-- <form action="{{ url_for('pay') }}" method="POST">
+         <script
+           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+           data-key="pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ"
+           data-amount="1000"
+           data-name="Demo Site"
+           data-description="Widget"
+           data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+           data-locale="auto">
+         </script>-->
+       </form>
+     </div>
+     <br>
+     <form action="{{ url_for('predict_DOW')}}"method="post">
+         <button type="submit" class="btn btn-primary btn-block btn-large">Predict Dow</button>
+         <!-- . Purchase The Basic Model for only $10 Each Use -->
+         <div class="jumbotron">
+           <!-- <form action="{{ url_for('pay') }}" method="POST">
+             <script
+               src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+               data-key="pk_live_2pO0yUvt9xKyjAo9rca8Vkc600FWtgJuqZ"
+               data-amount="1000"
+               data-name="Demo Site"
+               data-description="Widget"
+               data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+               data-locale="auto">
+             </script> -->
+           <!-- </form> -->
+         </div>
+       </form>
+       <br>
+ </form>
+</div>
+</div>
+<body>
+  <p><h1><font color="#6699CC"> RESULTS</h1> </font></p>
+  <font color="#FF33CC"> {{ prediction_text }} </font>
+      <!-- Adding comments section -->
+
+      <div id="disqus_thread"></div>
+
+      <script>
+
+        (function() {
+
+          // DON'T EDIT BELOW THIS LINE
+
+          var d = document,
+
+            s = d.createElement("script");
+
+          s.src = "https://projectgammaai.weebly.com/";
+
+          s.setAttribute("data-timestamp", +new Date());
+
+          (d.head || d.body).appendChild(s);
+
+        })();
+
+      </script>
+
+      <noscript
+
+        >Please enable JavaScript to view the
+
+        <a href="https://disqus.com/?ref_noscript"
+
+          >comments powered by Disqus.</a
+
+        ></noscript
+
+      >
+
+    </main>
+
+
+
+    <footer id="main-footer">
+
+      Copyright &copy; 2019
+
+    </footer>
+
+  <!-- Adding comments section -->
+
+
+
+
+<!--
+    <script>
+
+      // Select DOM Items
+
+      const menuBtn = document.querySelector(".menu-btn");
+
+      const menu = document.querySelector(".menu");
+
+      const menuNav = document.querySelector(".menu-nav");
+
+      const menuBranding = document.querySelector(".menu-branding");
+
+      const navItems = document.querySelectorAll(".nav-item");
+
+
+    </script> -->
+</div>
+</body>
+</div>
+</body>
+</html>
