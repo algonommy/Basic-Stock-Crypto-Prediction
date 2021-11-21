@@ -32,4 +32,4 @@ Next, WE PAY FOR THE STOCK WE WOULD LIKE TO PREDICT:
 AFTERWARDS, THE STOCK PREDICTION WILL BE OUTPUTTED AFTER PAYMENT!
 ![alt text](https://i.imgur.com/PrKA4zP.png)
 
-THE FINAL OUTPUT IS THE HEROKU HOST : https://stock-prediction-basic.herokuapp.com/   
+THE FINAL OUTPUT IS THE HEROKU HOST : https://presa-app.herokuapp.com/
